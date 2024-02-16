@@ -4,7 +4,6 @@ import "leaflet/dist/leaflet.css";
 import { useSelector } from "react-redux";
 import L from 'leaflet'
 import icon from './../assets/plane-i.png'
-
 const MapView = ({ openModal }) => {
   const store = useSelector((store) => store);
 
@@ -12,7 +11,6 @@ const MapView = ({ openModal }) => {
     iconUrl: icon,
     iconSize: [20, 20],
   });
-
   return (
     <div className="leaflet-container">
       <MapContainer
